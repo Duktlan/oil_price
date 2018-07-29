@@ -11,6 +11,9 @@ while($data = mysqli_fetch_array($result)){
 }
 mysqli_free_result($result);
 mysqli_close($con);
+
+$output=exec('python oil_price.py');
+
 ?>
 
 <body bgcolor = "#99FFFF">
