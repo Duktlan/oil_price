@@ -1,7 +1,6 @@
 <?php
 $con=mysqlI_connect("localhost","root","","oil_price");
 mysqli_query($con,"SET NAMES utf8");
-#$sql = "SELECT * FROM `oil_price_table`";
 $result=mysqli_query($con,"SELECT * FROM `oil_price_table`");
 $num = mysqli_num_rows($result);
 $demo = array();
